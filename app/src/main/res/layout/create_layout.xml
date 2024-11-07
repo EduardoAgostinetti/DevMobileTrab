@@ -1,7 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_form.xml -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Campo 1 -->
+    <EditText
+        android:autofillHints="Campo1"
+        android:id="@+id/edtCampo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Campo1"
+        android:padding="16dp"
+        android:inputType="text" />
+    <!-- Espaçamento entre os campos -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+    <!-- Campo 2 -->
+    <EditText
+        android:autofillHints="Campo2"
+        android:id="@+id/edtCampo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Campo2"
+        android:padding="16dp"
+        android:inputType="text" />
+
+    <!-- Espaçamento entre os campos -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Botão para enviar o formulário -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSubmit" />
+
+    <!-- Espaçamento entre os botões -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Botão para voltar -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_back" />
 
 </LinearLayout>

@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Botão para navegar para o formulário -->
+    <Button
+        android:id="@+id/btnForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Criar Item (Create)" />
+
+    <!-- Espaçamento entre os botões -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Botão para navegar para a lista de itens -->
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listar Itens (READ)" />
+
+    <!-- Espaçamento entre os botões -->
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Botão para navegar para os creditos -->
+    <Button
+        android:id="@+id/btnCredits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Creditos" />
 
 </LinearLayout>
