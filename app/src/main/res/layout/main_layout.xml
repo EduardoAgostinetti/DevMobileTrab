@@ -12,11 +12,11 @@
         android:id="@+id/btnForm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Criar Item (Create)" />
+        android:text="@string/btnForm" />
 
     <!-- Espaçamento entre os botões -->
     <Space
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="16dp" />
 
     <!-- Botão para navegar para a lista de itens -->
@@ -24,12 +24,12 @@
         android:id="@+id/btnList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Listar Itens (READ)" />
+        android:text="@string/btnList" />
 
     <!-- Espaçamento entre os botões -->
 
     <Space
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="16dp" />
 
     <!-- Botão para navegar para os creditos -->
@@ -37,6 +37,6 @@
         android:id="@+id/btnCredits"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Creditos" />
+        android:text="@string/btnCredits" />
 
 </LinearLayout>
