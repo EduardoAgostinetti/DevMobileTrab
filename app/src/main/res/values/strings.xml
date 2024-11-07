@@ -1,7 +1,14 @@
 <resources>
     <string name="app_name">Trab</string>
-    <string name="btn_back">Voltar</string>
+    <string name="btn_back">Voltar ao Menu</string>
     <string name="btnSubmit">Enviar</string>
     <string name="Campo2">Campo 2</string>
     <string name="Campo1">Campo 1</string>
+    <string name="btnForm">Criar Item (Create)</string>
+    <string name="btnList">Listar Itens (Read)</string>
+    <string name="btnCredits">Creditos</string>
+    <string name="name1">Eduardo Cardoso Agostinetti</string>
+    <string name="name2">Vitor Prando</string>
+    <string name="name3">Caio Guari</string>
+    <string name="credits">Creditos</string>
 </resources>

@@ -1,47 +1,47 @@
-package com.example.trab
-
+import com.example.trab.R
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.trab.ui.theme.TrabTheme
+import android.view.View
+import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            TrabTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
+        setContentView(R.layout.main_layout)
+
+        val btnCreate = findViewById<Button>(R.id.btnForm)
+        val btnRead = findViewById<Button>(R.id.btnList)
+        val btnCredits = findViewById<Button>(R.id.btnCredits)
+
+        // Navegar para o Formulário
+        btnCreate.setOnClickListener { v: View? ->
+            val intent =
+                Intent(
+                    this@MainActivity,
+                    CreateActivity::class.java
+                )
+            startActivity(intent)
         }
-    }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+        // Navegar para a Lista de Itens
+        btnRead.setOnClickListener { v: View? ->
+            val intent =
+                Intent(
+                    this@MainActivity,
+                    ReadActivity::class.java
+                )
+            startActivity(intent)
+        }
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    TrabTheme {
-        Greeting("Android")
+        // Navegar para os Créditos
+        btnCredits.setOnClickListener { v: View? ->
+            val intent =
+                Intent(
+                    this@MainActivity,
+                    CreditsActivity::class.java
+                )
+            startActivity(intent)
+        }
     }
 }
